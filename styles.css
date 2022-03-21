@@ -5,37 +5,61 @@
 
 body{
     font-family: 'Red Hat Display' ;
-    background-color: lightcoral;
+    background-color: hsl(225, 100%, 94%);
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .card{
     margin: 0 auto;
     width: 325px;
     text-align: center;
     background-color: white;
+    border-radius: 18px;
+    padding-bottom: 35px;
 }
 
 .card__image img{
     width: 100%;
+    border-radius: 18px 18px 0 0;
 }
 
 .card__headLine h1{
     font-size: 1.4rem;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .card__paragraph p{
     font-size: 0.9rem;
     padding: 0 38px 0 38px;
     line-height: 1.6rem ;
+    color: hsl(224, 23%, 55%);
 }
 
 .card__planBanner {
 display: flex;
+align-items: center;
 width: 275px;
-margin: 0 25px 0 25px;
+margin: 20px 25px 0 25px;
 padding: 15px;
 background-color: hsl(225, 100%, 98%);
+border-radius: 10px;
     
+}
+
+.card__planIcon {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.card__planIcon img {
+    height: 45px;
+    width: 45px;
 }
 
 .card__plan-name-price-container {
@@ -43,6 +67,74 @@ background-color: hsl(225, 100%, 98%);
     flex-direction: column;  
     }
 
+.card__planName{
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+.card__planPrice{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.card__planChange{
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    margin-left: 45px;
+    text-decoration: underline;
+}
+
+
+
+.card__paymentBtn{
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0 15px 0;
+    width: 275px;
+    margin: 25px 0 25px 0;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 900;
+    box-shadow: 0 20px 20px rgb(20 20 215 / 0.2);
+}
+
 .card__cancelOrder{
     display: block;
+    font-weight: 900;
+    font-size: 0.9rem;
+    color: hsl(224, 23%, 55%);
 }
+
+@media (min-width: 500px){
+
+    .card{
+        width: 400px;
+    }
+
+    .card__paymentBtn{
+        width: 320px;
+    }
+
+    .card__planBanner {
+        width: 320px;
+        margin: 20px 40px 0 40px;
+            
+        }
+    
+        .card__planChange{
+            margin-left: 65px;
+        }
+
+        .card__planIcon {
+            margin-left: 10px;
+        }
+
+
+
+
+
+}
+
