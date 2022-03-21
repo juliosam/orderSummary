@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display' ;
+    background-color: lightcoral;
+}
+.card{
+    margin: 0 auto;
+    width: 325px;
+    text-align: center;
+    background-color: white;
+}
+
+.card__image img{
+    width: 100%;
+}
+
+.card__headLine h1{
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+.card__paragraph p{
+    font-size: 0.9rem;
+    padding: 0 38px 0 38px;
+    line-height: 1.6rem ;
+}
+
+.card__planBanner {
+display: flex;
+width: 275px;
+margin: 0 25px 0 25px;
+padding: 15px;
+background-color: hsl(225, 100%, 98%);
+    
+}
+
+.card__plan-name-price-container {
+    display: flex;
+    flex-direction: column;  
+    }
+
+.card__cancelOrder{
+    display: block;
+}
